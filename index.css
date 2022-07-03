@@ -1,0 +1,281 @@
+:root {
+    /* colors */
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    --clr-gold: 235 216% 212%;
+    --clr-RoseGold: 351 34% 57%;
+    --clr-White-Gold: 31 25% 65%;
+    --clr-vintage-Red:4 66% 28%;
+    --clr-wood-Brown:42 37% 41%;
+    --clr-green:145, 63%, 49%;
+    
+    /* font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+}
+body{
+    background-color: hsl(var(--clr-dark));
+}
+.navigation{
+    height: 65px;
+    display:grid;
+    background-color: hsl(var(--clr-dark));
+    grid-template-columns: 1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr,1fr;
+    
+}
+#home{
+ 
+   font-weight: 400;
+   font-size:var(--fs-500);
+   font-style: none;
+   text-decoration: none;
+   color:hsl(var(--clr-light));
+   grid-column-start: 7;
+   letter-spacing: 5px;
+
+}
+#work{
+    font-weight: 400;
+    font-size:var(--fs-500);
+    color:hsl(var(--clr-light));
+    font-style:none;
+    text-decoration:none;
+    grid-column-start: 8 ;
+    letter-spacing: 5px;
+}
+#contact{
+
+    font-weight: 400;
+    font-size:var(--fs-500);
+    color:hsl(var(--clr-light));
+    font-style:none;
+    text-decoration: none;
+    grid-column-start: 9;
+    letter-spacing: 5px;
+}
+#contact:hover{
+    background-color: aliceblue;
+    color: hsl(var(--clr-dark));
+}
+
+#work:hover{
+    background-color: aliceblue;
+    color: hsl(var(--clr-dark));
+}
+#home:hover{
+    background-color: aliceblue;
+    color: hsl(var(--clr-dark));
+}
+.logo{
+    color: hsl(var(--clr-wood-Brown));
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-size: var(--fs-500);
+
+}
+.one-section{
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+}
+h1
+{
+    /*font-size: 72px;
+    background: -webkit-linear-gradient(hsl(var(--clr-RoseGold)),hsl(27, 100%, 87%));
+    -webkit-background-clip: text; YUKH THESE COLORS SUCKS
+    -webkit-text-fill-color: transparent;
+  }*/
+    color:hsl(var(--clr-light));
+    font-size: var(--fs-700);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:500;
+    letter-spacing: 5px;
+    grid-column-start: 1;
+   /* position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);*/
+}
+h2{
+    position: relative;
+    font-size: var(--fs-700);
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 800;
+    color:hsl(var(--clr-vintage-Red));
+    /*margin: 28% 0 0 24%;*/
+    grid-column-start: 3;
+}
+
+h2::before,
+h2::after{
+    content: '';
+    position:absolute;
+    top:0%;
+    left:0%;
+    bottom:0%;
+    right:0%;
+}
+h2::before{
+    background: hsl(var(--clr-dark));
+    animation: typewriter 4s steps(25) infinite;
+}
+h3{
+    color:hsl(var(--clr-light));
+    font-size: var(--fs-700);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:500;
+    letter-spacing: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes typewriter {
+    to {left: 100%;}
+}
+#project-grid{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.firstProject {
+    color:hsl(var(--clr-light));
+    background-image: url(background-crew-tablet.jpg);
+    height: 300px;
+    letter-spacing: 5px;
+    font-family: 'Hind', sans-serif;
+    background-size: cover;
+    padding: 10rem 0 0;
+    
+
+}
+
+.secondProject{
+    color:hsl(var(--clr-light));
+    background-image: url(2.png);
+    height: 300px;
+    letter-spacing: 5px;
+    font-family: 'Hind', sans-serif;
+    background-size: cover;
+    padding: 10rem 0 0;
+
+
+}
+.scard-content{
+    padding: 1.5rem;
+}
+.thirdProject{
+    color:hsl(var(--clr-light));
+    background-image: url(3.png);
+    height: 300px;
+    letter-spacing: 5px;
+    font-family: 'Hind', sans-serif;
+    background-size: cover;
+    padding: 10rem 0 0;
+}
+.Tcard-content{
+    padding: 1.5rem;
+}
+.wallpaper{
+    color:hsl(var(--clr-light));
+    background-image: url(4.png);
+    height: 300px;
+    letter-spacing: 5px;
+    font-family: 'Hind', sans-serif;
+    background-size: cover;
+    padding: 10rem 0 0;
+
+}
+.button1{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    
+}
+.button1:hover{
+    background-color: hsl(var(--clr-green));
+    color: hsl(var(--clr-dark));
+}
+/* create a button for .Sbutton*/
+.Sbutton{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    
+}
+.Sbutton:hover{
+    background-color: hsl(var(--clr-green));
+    color: hsl(var(--clr-dark));
+}
+/* create a button for .Tbutton*/
+.Tbutton{
+    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    
+}
+.Tbutton:hover{
+    background-color: hsl(var(--clr-green));
+    color: hsl(var(--clr-dark));
+}
+#lol{
+    height: 100vh;
+    background-color: hsl(var(--clr-vintage-Red));
+    color: hsl(var(--clr-light));
+    font-size: var(--fs-500);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;   
+    width: 100%;
+    
+    
+}
