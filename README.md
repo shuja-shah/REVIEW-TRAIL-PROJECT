@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-#REVIEWING TRAILS PROJECT.
+## REVIEWING TRAILS PROJECT.
 
 > This special project deals with reviewing the admission trail project for microverse.
 The original trail project is a personal portfolio site that was created in collaberation with Carlos  Onarao (a fellow student of microverse). 
